@@ -1,4 +1,5 @@
 :root {
-  --main-font-color: #f9f9f9;
-  --border-color: #c4c4c4;
+  --main-font-color: #f6f6f6ec;
+  --border-color: #f6f6f6d9;
+  --placeholder-transition: all 0.2s ease-in-out;
 }

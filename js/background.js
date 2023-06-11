@@ -1,13 +1,16 @@
 const images = [
-  "https://source.unsplash.com/random/?Wallpapers",
-  "https://source.unsplash.com/random/?sky",
-  "https://source.unsplash.com/random/?sunset",
-  "https://source.unsplash.com/random/?mountain",
-  "https://source.unsplash.com/random/?snow",
-  "https://source.unsplash.com/random/?night",
-  "https://source.unsplash.com/random/?paintings",
+  "0.jpg",
+  "1.jpg",
+  "2.jpg",
+  "3.jpg",
+  "4.jpg",
+  "5.jpg",
+  "6.jpg",
+  "7.jpg",
+  "8.jpg",
+  "9.jpg",
 ];
 
-const pickedImgNumber = Math.floor(Math.random() * images.length);
-const bgImg = document.body.style;
-bgImg.backgroundImage = `url(${images[pickedImgNumber]})`;
+const chosenImage = images[Math.floor(Math.random() * images.length)];
+
+document.body.style.backgroundImage = `url(../assets/${chosenImage})`
