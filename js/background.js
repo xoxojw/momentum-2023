@@ -1,20 +1,13 @@
 const images = [
-  "0.jpg",
-  "1.jpg",
-  "2.jpg",
-  "3.jpg",
-  "4.jpg",
-  "5.jpg",
-  "6.jpg",
-  "7.jpg",
+  "https://source.unsplash.com/random/?Wallpapers",
+  "https://source.unsplash.com/random/?sky",
+  "https://source.unsplash.com/random/?sunset",
+  "https://source.unsplash.com/random/?mountain",
+  "https://source.unsplash.com/random/?snow",
+  "https://source.unsplash.com/random/?night",
+  "https://source.unsplash.com/random/?paintings",
 ];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
-
-const bgImage = document.createElement("img");
-
-bgImage.src = `img/${chosenImage}`;
-
-// append는 가장 뒤에
-// prepend는 가장 위에
-document.body.appendChild(bgImage);
+const pickedImgNumber = Math.floor(Math.random() * images.length);
+const bgImage = document
+document.body.style.backgroundImage = `url(${images[pickedImgNumber]})`
