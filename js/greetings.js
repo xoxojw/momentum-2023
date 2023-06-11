@@ -18,6 +18,7 @@ const hours = date.getHours();
 console.log(hours);
 
 const paintGreetings = (username) => {
+  document.title = `${username}'s DashBoard`;
   if (5 <= hours && hours < 12) {
     greeting.innerText = `Good Morning, ${username}.`;
   } else if (12 <= hours && hours < 18) {
@@ -28,7 +29,6 @@ const paintGreetings = (username) => {
     greeting.innerText = `Good Night, ${username}.`;
   }
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  document.title = `${username}'s DashBoard`;
 };
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
