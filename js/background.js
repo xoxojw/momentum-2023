@@ -9,5 +9,5 @@ const images = [
 ];
 
 const pickedImgNumber = Math.floor(Math.random() * images.length);
-const bgImage = document
-document.body.style.backgroundImage = `url(${images[pickedImgNumber]})`
+const bgImg = document.body.style;
+bgImg.backgroundImage = `url(${images[pickedImgNumber]})`;

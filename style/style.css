@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "variable.css";
 @import "fonts.css";
 
 .hidden {
@@ -7,10 +8,46 @@
 
 body {
   font-family: -apple-system, "Pretendard-Regular", Helvetica, Arial, sans-serif !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--main-font-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #clock {
+  padding: 2vh;
   font-size: 900%;
   font-weight: 500;
   letter-spacing: -10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#login-form input {
+  min-width: 40vh;
+  padding: 1vh 0vh;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#login-form input::placeholder {
+  color: var(--main-font-color);
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 2px solid var(--border-color);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
 }
