@@ -1,7 +1,7 @@
-@import "reset.css";
+@import "./reset.css";
 
-@import "variable.css";
-@import "fonts.css";
+@import "./variable.css";
+@import "./fonts.css";
 
 .hidden {
   display: none !important;
@@ -60,10 +60,10 @@ main {
 
 #login-form input {
   position: absolute;
-  left: 5%;
+  left: 4%;
   top: 5%;
   padding-bottom: 10px;
-  max-width: 20vh;
+  width: 25vh;
   border: none;
   outline: none;
   background-color: transparent;
@@ -160,7 +160,7 @@ main {
   background-color: transparent;
   font-size: 1.05em;
 
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 10px;
 }
 
@@ -173,6 +173,24 @@ main {
   color: transparent;
   text-shadow: none;
   transition: var(--placeholder-transition);
+}
+
+/* Quick Link */
+#quicklink-container {
+  position: absolute;
+  top: 93%;
+  right: 73%;
+  width: 27vh;
+  height: 20vh;
+  font-size: 1.05em;
+}
+
+#quicklink-list {
+  display: flex;
+}
+
+#quicklink-list li {
+  margin-right: 12px;
 }
 
 /* Footer */

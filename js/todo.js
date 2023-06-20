@@ -42,7 +42,7 @@ const handleToDoSubmit = (event) => {
   toDoInput.value = "";
 
   if (toDos.length >= 6) {
-    alert("You cannot exceed six items in the to-do list.");
+    alert(`You cannot exceed six items in the To-Do list.\n투두 리스트는 6개를 초과해서 등록할 수 없어요. 😥`);
     return;
   }
 
